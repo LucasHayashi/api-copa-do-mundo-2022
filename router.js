@@ -6,7 +6,7 @@ const router = Router();
 // Informações sobre a classificação
 
 router.get('/standings', async (req, res) => {
-    const request = await api.get("/team");
+    const request = await api.get("/standings");
     res.send(request.data)
 });
 
